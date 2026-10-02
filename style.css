@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: "Poppins", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=BJCree:wght@400;500;600;700&display=swap');
+/*     font-family: "BJCree", serif; */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(bg-contador.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0px 0px 7px 5px rgba(0, 0, 0, 0.59);
+    margin: 0 10px;
+}
+
+.contador-titulo {
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    margin: 20px 20px 0 20px;
+    padding-bottom: 20px;
+}
+
+.contador-numero {
+    font-size: 100px;
+    font-weight: bold;
+    font-family: "BJCree", serif;
+    margin: 0px 20px 20px 20px;
+    background: transparent;
+    border: none;
+}
+
+.contador-botoes {
+    display: flex;
+    gap: 30px;
+}
+
+.botao-positivo,
+.botao-negativo {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 60px;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+
+.botao-positivo:active,
+.botao-negativo:active,
+.botao-reiniciar:active {
+    background-color: #000;
+    color: #fff;
+}
+
+.botao-reiniciar {
+    width: 160px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px;
+    border: 3px solid #000;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 20px;
+}
